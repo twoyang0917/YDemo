@@ -18,4 +18,11 @@ public class Utils {
             return "";
         }
     }
+
+    // 加载本地库
+    static {
+        System.loadLibrary("utils");
+    }
+
+    public static native String getEncryptKey();
 }
