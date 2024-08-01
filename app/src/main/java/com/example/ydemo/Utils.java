@@ -25,4 +25,23 @@ public class Utils {
     }
 
     public static native String getEncryptKey();
+
+    public static native String encrypt1(String text);
+
+    public static native String encrypt2(byte[] data);
+
+
+    // c调用java的静态方法
+    public static native String encrypt3(String text);
+
+    // c调用java的成员方法
+    private String name;
+    public Utils(String name) {
+        this.name = name;
+    }
+    public String showName() {
+        return this.name;
+    }
+
+    public static native String getName();
 }

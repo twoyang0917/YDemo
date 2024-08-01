@@ -17,6 +17,13 @@ public class IndexActivity extends AppCompatActivity {
 
         binding = ActivityIndexBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        binding.sampleText.setText(Utils.getEncryptKey());
+//        binding.sampleText.setText(Utils.getEncryptKey());
+//        binding.sampleText.setText(Utils.encrypt1("ydemo"));
+//        binding.sampleText.setText(Utils.encrypt2("ydemo".getBytes()));
+//        binding.sampleText.setText(Utils.encrypt3("ydemo"));
+//        binding.sampleText.setText(Utils.getName());
+
+        binding.sampleText.setText(Dynamic.encrypt1("ydemo"));
+//        binding.sampleText.setText(Dynamic.encrypt2("ydemo".getBytes()));
     }
 }
